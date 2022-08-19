@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator App</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+    </style>
+</head>
+<body>
+<div id="container">
+    <h1 class="head">Translate App</h1>
+
+    <div id="boxes">
+
+        <div id="upper">
+        
+            <select name="inp_lang" id="inp_lang">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="de">German</option>
+            <br>
+        </select>
+        <textarea name="" id="text" cols="30" rows="10" oninput="debounce(main,500)" placeholder="enter text here..."></textarea>
+        
+        </div>
+        
+        <div id="lower">
+            <select name="inp_lang" id="out_lang">
+                <option value="hi">Hindi</option>
+                <option value="en">English</option>
+                <option value="de">German</option>
+        
+               </select>
+               <p id="p"></p>
+        </div>
+
+    </div>
+
+</div>
+
+    
+</body>
+</html>
+
+<script src="index.js"></script>
